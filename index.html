@@ -4,28 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modals</title>
+    <title>Modals javascript</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/main.js" defer></script>
 </head>
 <body>
-    <h1>Javascript Modal</h1>
+    <h1>Js Modals</h1>
     <div class="btn-group">
-        <button>Information</button>
-        <button>Confirmation</button>
-        <button>Form</button>
+        <button id="open-inform-modal">Inform</button>
+        <button id="open-confirm-modal">Confirm</button>
+        <button id="open-submit-modal">Submit</button>
     </div>
     <!-- MODAL FADE -->
-    <div id="fade"></div>
+    <div id="modal-fade"></div>
 
     <!-- INFORMATION MODAL -->
-    <div id="info-modal"></div>
+    <div class="modal" id="inform-modal">
+        <div class="modal-header">
+            <h2 class="modal-title">Lorem Ipsum</h2>
+            <span class="close-inform-modal">X</span>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, praesentium nisi, cum fugiat voluptatum voluptates ducimus numquam enim illum error earum in aliquam est vel minus distinctio maiores ipsum quisquam.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo soluta ullam fugit, incidunt, alias odit tenetur necessitatibus magnam laudantium nobis repellat autem eveniet ea error asperiores! Sapiente fugiat mollitia iure.</p>
+        </div>
+        <div class="modal-footer">
+            <button class="close-inform-modal" id="ok-btn">Ok</button>
+        </div>
+    </div>
     
     <!-- CONFIRMATION MODAL -->
-    <div id="conf-modal"></div>
+    <div class="modal" id="confirm-modal">
+        <div class="modal-header">
+            <h2 class="modal-title">Lorem Ipsum Fugiat </h2>
+            <span class="close-confirm-modal">X</span>
+        </div>
+        <div class="modal-body">
+            <p>Eos, praesentium nisi, cum fugiat voluptatum voluptates ?</p>
+        </div>
+        <div class="modal-footer">
+            <button class="close-confirm-modal" id="delete-btn">Delete</button>
+            <button class="close-confirm-modal">Cancel</button>
+        </div>
+    </div>
     
-    <!-- FORM MODAL -->
-    <div id="form-modal"></div>
+    <!-- SUBMIT MODAL -->
+    <div class="modal" id="submit-modal">
+        <div class="modal-header">
+            <h2 class="modal-title">Lorem Ipsum Form </h2>
+            <span class="close-submit-modal">X</span>
+        </div>
+        <div class="modal-body">
+            <form action="">
+                <div class="form-group">
+                    <label for="idn">Ident Number</label>
+                    <input type="text" id="idn">
+                </div>
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select name="" id="">
+                        <option value="" selected disabled>Select your gender</option>
+                        <option value="Female" >Female</option>
+                        <option value="Male" >Male</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label>City</label>
+                    <select name="" id="">
+                        <option value="" selected disabled>Select a city</option>
+                        <option value="Bengo" >Bengo</option>
+                        <option value="Benguela" >Benguela</option>
+                        <option value="Cabinda" >Cabinda</option>
+                        <option value="Huila" >Huila</option>
+                        <option value="Huambo" >Cabinda</option>
+                        <option value="Luanda" >Luanda</option>
+                        <option value="Zaire" >Zaire</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="close-submit-modal" id="submit-btn">Submit</button>
+            <button class="close-submit-modal">Cancel</button>
+        </div>
+    </div>
 
 </body>
 </html>

@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn-group button {
+    min-width: 100px;
+    min-height: 30px;
+    font-size: .9rem;
+    margin: 0 10px;
+    padding: .5rem;
+    background-color: #ccc;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: .8;
+    transition: 500ms;
+}
+
+.btn-group button:hover {
+    opacity: 1;
+}
+
+/* MODAL FADE */
+#modal-fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    max-width: 90%;
+    background-color: #fff;
+    border-radius: .25rem;
+
+}
+
+.modal button {
+    padding: .5rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 1rem;
+}
+
+.modal button:hover {
+    opacity: 1;
+}
+
+.modal-header,
+.modal-body {
+    padding: 1rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.modal-header span {
+    font-size: .9rem;
+    font-weight: bold;
+    opacity: .7;
+    cursor: pointer;
+    user-select: none;
+}
+
+.modal-header span:hover {
+    opacity: 1;
+}
+
+.modal-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.modal-body p{
+    margin-top: 1rem;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    max-width: 90%;
+    margin: 0 auto 1rem auto;
+    border-top: 1px solid #ccc;
+    padding-top: .6rem;
+}
+
+.modal-footer button {
+    margin-left: 20px;
+}
+
+/* SHOW/HIDE MODAL*/
+#modal-fade,
+#inform-modal,
+#confirm-modal,
+#submit-modal {
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none; /* When hidden, no cursor/poiter events */
+    transition: 500ms;
+}
+
+#modal-fade.active,
+#inform-modal.active,
+#confirm-modal.active,
+#submit-modal.active {
+    opacity: 1;
+    pointer-events: all; /* When active, all cursor/pointer events active */
+}
+
+/* when active animate modal from top to 50% of modal fade.*/ 
+#inform-modal.active,
+#confirm-modal.active,
+#submit-modal.active {
+    top: 50%;
+}
+
+/* INFORM MODAL */
+#open-inform-modal,
+#inform-modal .modal-header,
+#ok-btn { 
+    background-color: #007bff;
+}
+
+/* CONFIRM MODAL */
+#open-confirm-modal, 
+#confirm-modal .modal-header, 
+#delete-btn {
+    background-color: #860b0b;
+}
+
+/* SUBMIT MODAL */
+#open-submit-modal, 
+#submit-modal .modal-header, 
+#submit-btn {
+    background-color: #5f0b86;
+}
+
+#submit-modal .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+#submit-modal .form-group label{
+    margin-bottom: 2px;
+}
+
+#submit-modal .form-group input, 
+#submit-modal .form-group select {
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #ccc;
+    padding: 0 10px;
+}
