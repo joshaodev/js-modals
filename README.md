@@ -12,10 +12,10 @@ Three types modals made with Html, Css and Javascript, to information, to confir
 ![Information](https://github.com/joshaodev/js-modals/blob/main/screenshots/modal_inform.PNG)
 
 ### Confirmation Model
-![Confirmation](hhttps://github.com/joshaodev/js-modals/blob/main/screenshots/modal_confirm.PNG)
+![Confirmation](https://github.com/joshaodev/js-modals/blob/main/screenshots/modal_confirm.PNG)
 
 ### Submit Model
-![Submit](https://github.com/joshaodev/js-modals/blob/main/screenshots/modal_submit.PNG
+![Submit](https://github.com/joshaodev/js-modals/blob/main/screenshots/modal_submit.PNG)
 
 ## 🛠️ Build with
 
