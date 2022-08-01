@@ -27,9 +27,9 @@ Three types modals made with Html, Css and Javascript, to information, to confir
 
 1.0 
 
-## ✒️ Autor
+## ✒️ Author
 
-* **Josemar Oatanha** - *Trabalho Completo* - [Josemar Oatanha](https://github.com/joshaodev)
+* **Josemar Oatanha** - [Josemar Oatanha](https://github.com/joshaodev)
 
 ---
 ⌨️ by [Josemar Oatanha](https://gist.github.com/joshaodev) 🤓
